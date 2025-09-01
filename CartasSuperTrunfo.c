@@ -12,19 +12,15 @@ int main() {
 
     char estado1[20];
     char estado2[20];
-    char codigo1[10];
-    char codigo2[10];
+    char codigo1[20];
+    char codigo2[20];
     char cidade1[20];
     char cidade2[20];
-    int populacao1;
-    int populacao2;
-    float area1;
-    float area2;
-    float pib1;
-    float pib2;
-    int turistico1;
-    int turistico2;
-
+    int populacao1, populacao2;
+    float area1, area2;
+    float pib1, pib2;
+    int turistico1, turistico2;
+    
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
@@ -41,7 +37,7 @@ int main() {
 
     // CIDADE 01:
     printf("Digite o nome da Cidade: ");
-    scanf("%s", &cidade1);
+    fgets(cidade1,20,stdin);
 
     // POPULAÇÃO 01:
     printf("Digite o numero de habitantes desta cidade: ");
@@ -60,7 +56,7 @@ int main() {
     scanf("%d", &turistico1);
 
     // EXIBIÇÃO DA CARTA 1:
-    printf("Carta 1:");
+    printf("Carta 1: ");
     printf("Estado: %s\n", estado1);
     printf("Codigo: %s\n", codigo1);
     printf("Nome da cidade: %s\n", cidade1);
