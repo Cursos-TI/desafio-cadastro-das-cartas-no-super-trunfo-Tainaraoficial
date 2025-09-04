@@ -26,6 +26,7 @@ int main() {
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
     // CARTA 1:
+
     printf("Digite uma letra de 'A' a 'H' para representar o seu estado: ");
     scanf("%s", estado1);
 
@@ -50,6 +51,7 @@ int main() {
     scanf("%d", &turistico1);
 
     // CARTA 2:
+
     printf("Digite uma letra de 'A' a 'H' para representar o seu segundo estado: ");
     scanf("%s", estado2);
 
@@ -58,13 +60,13 @@ int main() {
 
     getchar(); // limpar buffer
 
-    printf("Digite o nome da segunda Cidade: ");
+    printf("Digite o nome da segunda cidade: ");
     fgets(cidade2, sizeof(cidade2), stdin); 
 
     printf("Digite o número de habitantes desta segunda cidade: ");
     scanf("%d", &populacao2);
 
-    printf("Digite a area desta segunda cidade em quilômetros quadrados: ");
+    printf("Digite a área desta segunda cidade em quilômetros quadrados: ");
     scanf("%f", &area2);
 
     printf("Digite o produto interno desta segunda cidade (PIB): ");
@@ -79,6 +81,7 @@ int main() {
     // EXIBIÇÃO DAS DUAS CARTAS:
 
     // CARTA 1:
+
     printf("Carta 1:\n");
     printf("Estado: %s\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -86,9 +89,10 @@ int main() {
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
-    printf("Número de pontos turísticos: %d\n", turistico1);
+    printf("Número de Pontos turísticos: %d\n", turistico1);
 
     // CARTA 2:
+    
     printf("Carta 2:\n");
     printf("Estado: %s\n", estado2);
     printf("Código: %s\n", codigo2);
@@ -96,7 +100,7 @@ int main() {
     printf("População: %d\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
-    printf("Número de pontos turísticos: %d\n", turistico2);
+    printf("Número de Pontos turísticos: %d\n", turistico2);
 
     return 0;
 
